@@ -23,7 +23,7 @@ class RedisCache extends CacheProvider
      *
      * @return void
      */
-    public function setRedis(Redis $redis)
+    public function setRedis($redis)
     {
         $redis->setOption(Redis::OPT_SERIALIZER, $this->getSerializerValue());
         $this->redis = $redis;
